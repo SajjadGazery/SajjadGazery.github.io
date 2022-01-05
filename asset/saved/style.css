@@ -1,0 +1,1119 @@
+@font-face {
+    font-family: 'iranyekan';
+    src: url(../files/fonts/iranyekanweblightfanum.woff);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'iranyekan';
+    src: url(../files/fonts/iranyekanwebregularfanum.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'iranyekan';
+    src: url(../files/fonts/iranyekanwebmediumfanum.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'iranyekan';
+    src: url(../files/fonts/iranyekanwebboldfanum.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'iranyekan';
+    src: url(../files/fonts/iranyekanwebextraboldfanum.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'iranyekan';
+    src: url(../files/fonts/iranyekanwebblack.woff);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'iranyekan';
+    src: url(../files/fonts/iranyekanwebextrablack.woff);
+    font-weight: 800;
+}
+
+
+/* ==========================================================================
+   2.0 Reset css
+   ========================================================================== */
+:root {
+    scrollbar-color:#D5D5D500 #D5D5D500 !important;
+    scrollbar-width: thin !important;
+}
+
+:is(html,body,*)::-webkit-scrollbar-thumb {
+    background: #ff2dc0;
+}
+
+:is(html,body,*)::-webkit-scrollbar {
+    width: 0;
+    opacity: 0;
+    background: #ffffff;
+    /*background: #ff2dc0;*/
+    height: 80%;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    line-height: 20px;
+    direction: rtl;
+    font-family: iranyekan;
+    color: #959595;
+    background: black;
+    background-size: cover;
+    font-size: 13px;
+}
+
+body::before, body::after {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    display: block;
+    content: '';
+    filter: blur(15rem);
+    position: fixed;
+
+}
+
+body::before {
+    background: #ff00a3;
+    animation: right alternate-reverse infinite linear 5s;
+}
+
+body::after {
+    background: #0dcaf0;
+    animation: left ease-in-out alternate infinite 5s;
+}
+
+@keyframes right {
+    0% {
+        top: 0;
+        right: 0;
+    }
+    25% {
+        top: 0;
+        right: 18%;
+    }
+    50% {
+        top: 30%;
+        right: 19%;
+    }
+    75% {
+        top: 50%;
+        right: 15%;
+    }
+    100% {
+        top: 0;
+        right: 0;
+    }
+}
+
+@keyframes left {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: 18%;
+    }
+    50% {
+        top: 30%;
+        left: 19%;
+    }
+    75% {
+        top: 50%;
+        left: 15%;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+.blur {
+    background: #ffffff36 !important;
+    border-radius: 20px !important;
+    backdrop-filter: blur(15px) !important;
+    box-shadow: 0 0 15px #ffffff24 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+}
+
+.nav > li > a:link, .nav > li > a:active .nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    outline: 0;
+    -moz-outline: 0;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    outline: 0;
+    -moz-outline: 0;
+}
+
+section .section-text {
+    padding: 0px 0px 70px 0px;
+}
+
+section .section-heading {
+    font-size: 24px;
+    color: #362f2d;
+    line-height: 36px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.row-m-bttom {
+    margin-bottom: 60px;
+}
+
+.li-margin {
+    margin-bottom: 30px;
+}
+
+.pad-0 {
+    padding: 0px;
+}
+
+.pad-ex {
+    padding: 3px;
+}
+
+.npl {
+    padding-left: 0px;
+}
+
+.npr {
+    padding-right: 0px;
+}
+
+
+/* ==========================================================================
+   3.0 Home-content Styling
+   ========================================================================== */
+.content {
+    position: absolute;
+    top: 50%;
+    margin-top: -300px;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .content .side-menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        background: #00000091;
+    }
+}
+
+.content .side-menu {
+    border: none !important;
+    width: 26%;
+    float: left;
+}
+
+.content .nav-tabs > li {
+    float: none;
+    margin: 5px 0;
+    padding: 5px 0;
+    height: 110px;
+}
+@media (max-width: 576px) {
+    .content .nav-tabs > li{
+        height: 75px;
+    }
+}
+.content .side-menu li a {
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    background: #ffffff36 !important;
+    height: 100%;
+    box-shadow: rgb(255 255 255 / 16%) -3px -4px 12px, rgb(0 0 0 / 22%) 3px 3px 5px !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .side-menu li:last-child a {
+    border-bottom: 0px;
+}
+
+.content .side-menu li a i {
+    color: #ff2dc0;
+}
+
+.content .side-menu li a:hover {
+    color: #ff2dc0;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+}
+
+.content .side-menu li a:hover > i, .content .side-menu li a:hover > span {
+    color: #ff2dc0;
+}
+
+.content .side-menu li.active a {
+    background: #ff2dc0;
+    color: #fff;
+    border: 0px;
+}
+
+.content .side-menu li.active a > i, .content .side-menu li.active a > span {
+    color: #fff;
+}
+
+.content .side-menu li a i {
+    font-size: 30px;
+}
+
+.content .side-menu li a span {
+    color: #b7b7b7;
+    margin-top: 10px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+}
+
+.content .main-profile {
+    width: 70%;
+    float: left;
+    position: relative;
+    z-index: 1;
+    margin-left: 15px;
+    text-align: center;
+    padding: 30px 15px;
+    height: 590px;
+}
+
+.content .main-profile .pro-img {
+    height: 120px;
+    width: 120px;
+    border: 5px solid #ccc;
+}
+
+.content .main-profile .text-wrapper {
+    padding: 15px 0;
+}
+
+.content .main-profile .sign-img {
+    margin-bottom: 20px;
+}
+
+.content .main-profile .text-wrapper h3 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.content .main-profile .text-wrapper p {
+    text-align: center;
+    color: #ffffffc7;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.content .main-profile .text-wrapper h4 {
+    font-size: 18px;
+    color: #ffd400;
+    padding: 10px 0 25px 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.content .main-profile .text-wrapper a {
+    display: block;
+    padding: 5px 0;
+    color: #fff;
+    margin: 0 auto;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+
+.content .main-profile .social-wrapper {
+    margin-top: 30px;
+}
+
+.content .main-profile .social-wrapper a {
+    font-size: 18px;
+    color: #ff2dc0;
+    margin: 0 10px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+
+.details-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+/* ==========================================================================
+    4.0 About us Styling
+	========================================================================== */
+
+@media (max-width: 991px) {
+    .details-wrapper .tab-pane{
+        height: auto !important;
+    }
+}
+.details-wrapper .tab-pane {
+    padding: 30px 25px;
+    border-radius: 20px;
+    background: #ffffff4f;
+    backdrop-filter: blur(15px);
+    -webkit-box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1);
+    height: 590px;
+    overflow: auto;
+}
+
+.details-wrapper .tab-pane .row-heading {
+    font-size: 20px;
+    color: #ffffff;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1e1e1;
+    margin: 5px 0 30px 0;
+}
+
+.details-wrapper .tab-pane .number {
+    font-size: 36px;
+    color: #ff2dc0;
+    line-height: 30px;
+}
+
+.about-us .abt-focus {
+    margin-top: 20px;
+}
+
+.about-us .abt-focus li {
+    margin-bottom: 5px;
+}
+
+.about-us .abt-focus li span:last-child {
+    color: #fff;
+    font-size: 15px;
+}
+
+.about-us .abt-focus .st-line {
+    width: 150px;
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    line-height: 35px;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 35px;
+    font-weight: 300;
+    color: white;
+}
+
+.about-us .service-list li i {
+    font-size: 30px;
+    color: #000;
+    padding-bottom: 15px;
+}
+
+.about-us .service-list li h4 {
+    font-size: 18px;
+    color: #000;
+    padding-bottom: 15px;
+}
+
+.about-us .fact-list li i {
+    font-size: 30px;
+    color: #000;
+}
+
+.about-us .fact-list li .text-count {
+    margin-left: 50px;
+}
+
+.about-us .counter {
+    font-size: 24px;
+    color: #000;
+}
+
+.about-us .testimonial-list img {
+    height: 60px;
+    width: 60px;
+    float: left;
+}
+
+.about-us .testimonial-list .carousel-indicators {
+    bottom: -25px;
+    left: 0px;
+    width: auto;
+    margin-left: 0px;
+}
+
+.about-us .testimonial-list .carousel-indicators li {
+    background: #b7b7b7;
+    border-radius: 0px;
+    border-color: none;
+    height: 4px;
+    width: 20px;
+    border-bottom: 0px;
+
+}
+
+.about-us .testimonial-list .carousel-indicators li.active {
+    height: 4px;
+    width: 20px;
+    background: #ff2dc0;
+    margin: 1px;
+}
+
+.about-us .testimonial-list .name-wrapper {
+    font-size: 18px;
+    color: #000;
+    padding-bottom: 15px;
+    margin-left: 80px;
+}
+
+.about-us .testimonial-list p {
+    padding-right: 80px;
+    padding-top: 10px;
+}
+
+.about-us .testimonial-list .name-wrapper span {
+    font-size: 14px;
+    color: #b7b7b7;
+}
+
+/* ==========================================================================
+    5.0 Resume Styling
+	========================================================================== */
+.resume .event-list .event {
+    position: relative;
+    padding: 0 0 20px 25px;
+}
+
+.resume .event-list .event:last-child {
+    padding-bottom: 0;
+}
+
+.resume .event-list .event:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    bottom: -10px;
+    left: 4px;
+    width: 2px;
+    background: #c2c2c2;
+}
+
+.resume .event-list .event:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ff2dc0;
+}
+
+.event-list .event .date {
+    width: 160px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: white;
+    padding: 5px 0;
+}
+
+.event-list .event h5 {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.event-list .event h6 {
+    font-size: 12px;
+    color: #ffffffcf;
+    font-weight: 200;
+    padding: 5px 0;
+}
+
+.skill-list li {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skill-list li h4 {
+    font-size: 14px;
+    color: #fff;
+}
+
+.skill-list li .percent {
+    position: absolute;
+    left: 0;
+    color: white;
+    font-weight: 200;
+    font-size: 13px;
+    top: 0;
+}
+
+.skill-list li .skill-bar {
+    border: 1px solid #ffffff21;
+    margin-top: 8px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.skill-list li .skill-bar .inner-prcnt {
+    /*background: #ff2dc0;*/
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ff2dc0, #ff00fb);
+    height: 5px;
+}
+
+/* ==========================================================================
+   6.0 Portfolio Styling
+   ========================================================================== */
+.portfolio .portfolio-wrapper {
+    position: relative;
+}
+
+.portfolio .filters-menu {
+    margin-bottom: 40px;
+    text-align: center;;
+}
+
+.portfolio .filters-menu li {
+    display: inline-block;
+}
+
+.portfolio .filters-menu li a {
+    position: relative;
+    color: #b7b7b7;
+    padding: 5px 10px;
+}
+
+.portfolio .filters-menu li a.active {
+    border-bottom: 3px solid #000;
+    color: #000 !important;
+}
+
+.portfolio .filters-menu li a:hover {
+    color: #000;
+}
+
+.portfolio .filters-menu li > a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: linear-gradient(to right, transparent 50.3%, #000 50.3%);
+    transition: background-position .2s .1s ease-out;
+    background-size: 200% auto;
+}
+
+.portfolio .filters-menu li > a:hover::after {
+    background-position: -100% 0;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item {
+    position: relative;
+    /*float: left;*/
+    /*overflow: hidden;*/
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    display: block;
+    height: 180px;
+    /*width: 30.333%;*/
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+.portfolio .portfolio-wrapper .portfolio-item .link-box {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item .link-box img {
+    width: 100%;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item .link-box .portfolio-hover {
+    background: rgba(38, 92, 220, 0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item .link-box .portfolio-hover:hover {
+    opacity: 1;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item .link-box .portfolio-hover .portfolio-hover-content {
+    padding: 15px;
+    color: #fff;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item .link-box .portfolio-hover .portfolio-hover-content h4 {
+    font-size: 20px;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item .link-box .portfolio-hover .portfolio-hover-content p {
+    margin: 0 !important;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item .link-box .portfolio-hover .portfolio-hover-content .extra-ink {
+    text-align: center;
+    font-size: 18px;
+    position: absolute;
+    top: 46%;
+    width: 100%;
+    left: 0%;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item .link-box .portfolio-hover .portfolio-hover-content .extra-ink i {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 15px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item .link-box .portfolio-hover .portfolio-hover-content .extra-ink i:hover {
+    background: #fff;
+    color: #ff2dc0;
+}
+
+#container .mix {
+    display: none;
+}
+
+/* ==========================================================================
+   7.0 Blog
+   ========================================================================== */
+.blog .blog-list li {
+    margin-bottom: 60px;
+}
+
+.blog .blog-list li h4 {
+    font-size: 20px;
+    color: #000;
+    padding: 30px 0 8px 0;
+}
+
+.blog .blog-list li a {
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid #ff2dc0;
+    width: 90px;
+    color: #ff2dc0;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.blog .blog-list li a:hover {
+    color: #fff;
+    background: #ff2dc0;
+}
+
+/* ==========================================================================
+   8.0 Contact Styling
+   ========================================================================== */
+.contact .contact-list .contact_item .text-c{
+    margin-right: 20px;
+}
+.contact .contact-list .contact_item {
+    display: flex;
+    /*background: #ffffff;*/
+    padding: 10px;
+    border-radius: 15px;
+    /*flex-direction: column;*/
+    margin-bottom: 20px;
+    box-shadow: -3px -4px 12px #ffffff29, 3px 3px 5px #00000038;
+    align-items: center;
+}
+
+.contact .contact-list li i {
+    font-size: 25px;
+    width: 50px;
+    color: #ffffff;
+    text-align: center;
+    height: 50px;
+    background: #ff2dc0;
+    border-radius: 50px;
+    display: grid;
+    place-items: center;
+}
+
+.contact .contact-list li p {
+    color: white;
+    font-size: 16px;
+}
+.contact .contact-list li h5 {
+    color: #ffffff8c;
+    padding: 15px 0 15px 0;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.contact .custom-form button {
+    background: #ff2dc0;
+    font-size: 14px;
+    color: #fff;
+    width: 100px;
+    padding: 10px;
+    border: 0;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+
+}
+
+.contact .custom-form button:hover {
+    background: #0A3AAD;
+}
+
+.contact .custom-form .form-group {
+    margin-bottom: 40px;
+}
+
+.contact .custom-form span {
+    font-size: 16px;
+    color: #898989;
+}
+
+.contact .custom-form .form-control {
+    border-radius: 0px;
+    border: none;
+    margin-top: 10px;
+    background: #fafafa;
+    height: 50px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .0);
+
+}
+
+.contact .custom-form textarea.form-control {
+    height: 100px;
+}
+
+/* ==========================================================================
+	preloader
+   ========================================================================== */
+#preloader {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff; /* change if the mask should have another color then white */
+    z-index: 10000; /* makes sure it stays on top */
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../files/image/loading.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+
+}
+
+
+/* ==========================================================================
+   9.0 Media query
+   ========================================================================== */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+    .portfolio .portfolio-wrapper .portfolio-item {
+        height: 210px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .content .side-menu {
+        position: relative;
+        right: 74%;
+    }
+
+    .content .main-profile {
+        position: relative;
+        left: 25%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+    .res-m-bttm {
+        margin-bottom: 35px;
+    }
+
+    .res-m-top {
+        margin-top: 35px;
+    }
+
+    .pad-l-0 {
+        padding-left: 0px;
+    }
+
+    .content .side-menu {
+        width: 100%;
+        height: auto;
+    }
+
+    .content .main-profile {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+
+    .content .side-menu li {
+        display: inline-block;
+        width: 19%
+    }
+
+    .content .side-menu li a {
+        border-bottom: 0;
+    }
+
+    .content {
+        top: 3%;
+        margin-top: 0;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+    .container {
+        width: 700px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        margin: 0 25px;
+    }
+
+    .portfolio .portfolio-wrapper .portfolio-item {
+        height: 200px;
+        width: 45%;
+    }
+
+    .content .side-menu {
+        width: 100%;
+        height: auto;
+    }
+
+    .content .side-menu li {
+        width: 19%;
+    }
+
+    .content .side-menu li a {
+        padding: 10px 0px;
+    }
+
+}
+@media (max-width: 991px) {
+    .content{
+        padding-bottom: 10rem;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+    .container {
+        margin: 0 30px;
+    }
+
+    .portfolio .portfolio-wrapper .portfolio-item {
+        width: 100%;
+        height: 210px;
+    }
+
+    .content .side-menu li {
+        width: 19%;
+    }
+
+    .content .side-menu li a i {
+        font-size: 13px;
+    }
+
+    .content .side-menu li a span {
+        font-size: 8px;
+    }
+
+    .portfolio .portfolio-wrapper .portfolio-item .link-box .portfolio-hover
+    .portfolio-hover-content .extra-ink {
+        top: 35%;
+    }
+
+    .portfolio .filters-menu li a {
+        padding: 5px 5px;
+        font-size: 11px;
+    }
+
+    .about-us .abt-focus .st-line {
+        width: 100%;
+    }
+}
+
+.portfolio-list li h6 {
+
+}
+
+.portfolio-list li h5 {
+    font-size: 18px;
+    color: #575757;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.portfolio-list li > div a {
+    /*background: white;*/
+    padding: 5px 5px 5px 10px;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 30px;
+    overflow: hidden;
+    color: white;
+    box-shadow: -3px -4px 12px #ffffff29, 3px 3px 5px #00000038;
+}
+
+.portfolio-list li span {
+    color: #ffffff;
+}
+
+.portfolio-list li a i {
+    font-size: 13px;
+    margin-left: 10px;
+    background: #ff2dc0;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: inline-grid;
+    place-items: center;
+    color: white;
+}
+
+.portfolio-list li > div {
+    /*background: white;*/
+    padding: 0 20px 20px 20px;
+    /*border-radius: 20px 0 20px 20px;*/
+}
+
+.social_list li{
+
+}
+.social_list li a{
+
+}
+.social_list li a span{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ffffff17;
+    font-size: 25px;
+    margin: 0 5px;
+    box-shadow: -3px -4px 12px #ffffff29, 3px 3px 5px #00000038;
+    display: grid;
+    place-items: center;
+}
+.social_list{
+    display: flex;
+    justify-content: center;
+}
+.btn_download{
+    padding: 10px 25px;
+    box-shadow: -3px -4px 12px #ffffff29, 3px 3px 5px #00000038;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.skill_list .skill_item i{
+    margin-left: 10px;
+    color: #bfbfbf;
+}
+.skill_list .skill_item{
+    background: #ffffffcf;
+    float: right;
+    color: #606060;
+    margin: 5px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.spacer{
+    height: 200px;
+    display: block;
+    width: 100%;
+}

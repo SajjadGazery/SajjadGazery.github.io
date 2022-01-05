@@ -1,0 +1,126 @@
+.npl {
+    padding-left: 15px;
+    padding-right: 0
+}
+
+.content .main-profile {
+    float: right;
+    margin-left: initial;
+    margin-right: 15px
+}
+
+.content .side-menu {
+    float: right;
+}
+
+.pull-left {
+    float: right !important
+}
+
+.fa.pull-left {
+    margin-right: initial;
+    margin-left: .3em
+}
+
+.about-us .fact-list li .text-count {
+    margin-left: initial;
+    margin-right: 50px
+}
+
+.about-us .testimonial-list img {
+    float: right
+}
+
+.about-us .testimonial-list .name-wrapper {
+    margin-left: initial;
+    margin-right: 80px
+}
+
+.about-us .testimonial-list p {
+    padding-right: initial;
+    padding-left: 80px
+}
+
+.about-us .testimonial-list .carousel-indicators {
+    left: initial;
+    right: 0;
+    margin-left: initial;
+    margin-right: 0
+}
+
+.carousel-indicators {
+    padding-left: initial;
+    padding-right: 0
+}
+
+.resume .event-list .event {
+    padding: 0 25px 20px 0
+}
+
+.resume .event-list .event:before {
+    left: initial;
+    right: 4px
+}
+
+.resume .event-list .event:after {
+    left: initial;
+    right: -3px
+}
+
+.resume .skill-list li .percent {
+    right: initial;
+    left: 0
+}
+
+.portfolio .portfolio-wrapper .portfolio-item {
+    float: right;
+    margin-right: initial;
+    margin-left: 10px
+}
+
+@media (min-width: 768px) {
+    .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+        float: right
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+        float: right
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .content .main-profile {
+        left: initial;
+        right: 25%
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .content .side-menu {
+        right: initial;
+        left: 74%
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .content .main-profile {
+        margin-left: initial;
+        margin-right: 0
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .content .side-menu li a span {
+        font-size: 10px;
+        font-weight: 400
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .pad-l-0 {
+        padding-left: initial;
+        padding-right: 0
+    }
+}
