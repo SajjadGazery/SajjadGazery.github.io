@@ -339,7 +339,7 @@ section .section-heading {
     margin-bottom: 20px;
 }
 
-.content .main-profile .text-wrapper h3 {
+.content .main-profile .text-wrapper h1 , .content .main-profile .text-wrapper h3 {
     font-size: 30px;
     color: #fff;
     font-weight: 600;
